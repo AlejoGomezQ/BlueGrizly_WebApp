@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  front:
+    build: 
+        context: ./back
+        dockerfile: Dockerfile
+    container_name: front
+    hostname: front
+    ports:
+     - "5555:80"
+    expose:
+     - "5555"
+    networks:
+     - default
+
+networks:
+  default:
+    ipam:
+      config:
+       - subnet: 10.10.0.0/24
