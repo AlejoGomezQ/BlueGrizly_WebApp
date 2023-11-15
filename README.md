@@ -2,18 +2,12 @@
 
 **Version**: 1.0.0
 
-<p align="center">
-  <div style="background-color: black; padding: 10px; text-align: center;">
-    <img src="https://www.bluegrizly.com/files/images/blue-grizly/blue-grizly-logo-w.png" alt="Compodoc: The missing documentation tool for your Angular application" width="226">
-  </div>
-</p>
-
 ## Tabla de contenidos
 
 - [Descripción](#descripcion)
 - [Uso](#uso)
 - [Estructura del Proyecto](#estructura-proyecto)
-- [Licencia](#copyright-and-ownership)
+- [Licencia](#copyright)
 
 ## Descripción
 
@@ -33,6 +27,6 @@ Blue Grizly es una PWA en Angular, Node y Python, que permite cotizar polizas de
 - **main.tf**: Instrucciones para en lanzamiento automatica de la aplicación en AWS.
 - **script.sh**: Archivo ejecutable que construye los contenedores.
 
-## Copyright and Ownership
+## Copyright
 
 © [2023] [Blue Grizly]. Todos los derechos reservados0. Este software es propiedad de [Blue Grizly] y es protegido por las politicas de copyright.
