@@ -2,19 +2,16 @@ version: "3.9"
 services:
   front:
     build: 
-        context: ./back
+        context: ./frontend
         dockerfile: Dockerfile
-    container_name: front
-    hostname: front
+    container_name: frontend
     ports:
-     - "5555:80"
-    expose:
-     - "5555"
-    networks:
-     - default
-
-networks:
-  default:
-    ipam:
-      config:
-       - subnet: 10.10.0.0/24
+        - "666:80"
+  back:
+    build: 
+        context: ./backend
+        dockerfile: Dockerfile
+    tty: true
+    container_name: backend
+    ports:
+        - "8000:8000"
