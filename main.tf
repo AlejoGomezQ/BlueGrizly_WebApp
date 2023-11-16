@@ -25,8 +25,10 @@ resource "aws_instance" "blue_grizly" {
     destination = "/home/ubuntu/Aplicacion.tar.gz"
   }
   provisioner "remote-exec" {
-    command = "tar -xvf Aplicacion.tar.gz & sudo ./script.sh"
-    interpreter = [ "/bin/bash", "-c" ]
+    inline = [
+      "chmod +x /tmp/script.sh",
+      "/tmp/script.sh args",
+    ]
   }
 
   connection {
