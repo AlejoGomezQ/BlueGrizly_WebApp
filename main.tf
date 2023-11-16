@@ -21,8 +21,8 @@ resource "aws_instance" "blue_grizly" {
   associate_public_ip_address = true
 
   provisioner "file" {
-    source = "Aplicacion.tar.gz"
-    destination = "/home/ubuntu/Aplicacion.tar.gz"
+    source = "WebApp.tar.gz"
+    destination = "/home/ubuntu/WebApp.tar.gz"
   }
   provisioner "remote-exec" {
     inline = [
