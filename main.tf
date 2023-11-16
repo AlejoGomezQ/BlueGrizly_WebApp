@@ -34,7 +34,7 @@ resource "aws_instance" "blue_grizly" {
   connection {
     type = "ssh"
     user = "ubuntu"
-    private_key = "${file("~/Documents/Aplicacion/appmovilllave.pem")}"
+    private_key = "${file("~/Documents/Aplicacion/app_server.pem")}"
     host = "${self.public_ip}"
   }
 
